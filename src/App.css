@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.max_box{
+  width: 80%;
+  /* height: 100vh; */
+  /* background-color: yellow; */
+  margin: auto;
+}
+.sta_max_box{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+.line_box{
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+}
+.MTR{
+  color: black;
+  font-size: 6rem;
+  text-align: center;
+  font-weight: bolder;
+}
+input{
+  cursor: pointer;
+  width: 140px;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  background-color: transparent;
+  margin: 10px;
+  /* font-weight: bold; */
+}
+.sta_box{
+  width: 30%;
+  /* height: 40%; */
+  background: black;
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  height: 130px;
+}
+
+.sta_box p{
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.direction{
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size:1.5rem;
+}
+
+.Sta_Box{
+  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.NewTime{
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .max_box{
+      width: 100%;
+  }
+  input{
+      width: 100px;
+      height: 40px;
+      font-size: 1.2rem;
+  }
+  .sta_box{
+      /* width: 145px; */
+      margin: 5px;
+      padding: 0px;
+  }
+  .sta_max_box{
+      justify-content: space-evenly;
+  }
+  .sta_box p :nth-child(2), .sta_box p :nth-child(3){
+      font-weight: bold;
+      font-size: 1rem;
+  }
+  .sta_box p :nth-child(1){
+      font-size: 1.2rem;
+      font-weight: bold;
+  }
+  .direction{
+      width: 50%;
+      font-size: 1rem;
+  }
+}
+
+
